@@ -30,7 +30,7 @@ post_count = 0
 page.css("#recent-posts li.archive-post").reverse.each { |post|
 
     doc = {} # initialize each document
-    doc[:title] = post.css("h2 a").text.strip
+    doc[:title] = post.css("h3 a").text.strip
 
     # skip the posts that already exist in the collection
     next if posts.find(title: "#{doc[:title]}").to_a.length > 0
