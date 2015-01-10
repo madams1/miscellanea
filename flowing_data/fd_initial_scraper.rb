@@ -29,7 +29,7 @@ for pg_num in last_pg_num.downto(1) do
     # look at each post
     page.css("#recent-posts li.archive-post").reverse_each { |post|
         doc = {}
-        doc[:title] = post.css("h2 a").text.strip
+        doc[:title] = post.css("h3 a").text.strip
 
         # link and date
         post.css("h2 a[rel='bookmark']").each { |link|
