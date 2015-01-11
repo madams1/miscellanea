@@ -39,7 +39,7 @@ page.css("#recent-posts li.archive-post").reverse.each { |post|
     post_count += 1
 
     # link and date
-    post.css("h2 a[rel='bookmark']").each { |link|
+    post.css("h3 a[rel='bookmark']").each { |link|
         doc[:link] = link['href']
 
         date_string = link['href'][/com\/([0-9]*\/[0-9]*\/[0-9]*)/, 1]
