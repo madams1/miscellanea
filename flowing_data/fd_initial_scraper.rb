@@ -32,7 +32,7 @@ for pg_num in last_pg_num.downto(1) do
         doc[:title] = post.css("h3 a").text.strip
 
         # link and date
-        post.css("h2 a[rel='bookmark']").each { |link|
+        post.css("h3 a[rel='bookmark']").each { |link|
             doc[:link] = link['href']
 
             date_string = link['href'][/com\/([0-9]*\/[0-9]*\/[0-9]*)/, 1]
