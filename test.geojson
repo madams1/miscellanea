@@ -1,6 +1,6 @@
 {
     "type": "MultiLineString",
-    "stroke": "black",
+    "stroke": black,
     "stroke-opacity": 0.3,
     "coordinates": [
         [
