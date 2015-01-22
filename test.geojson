@@ -1,4 +1,4 @@
-{ "type": "LineString",
+{ "type": "MultiLineString",
   "coordinates": [  [ 29.674, -82.34323 ],
                   [ 29.67402, -82.34422 ],
                   [ 29.67407, -82.34467 ],
